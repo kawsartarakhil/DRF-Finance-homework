@@ -18,7 +18,6 @@ class WalletView(APIView):
 
 class TransactionView(ListCreateAPIView):
     serializer_class = TransactionSerializer
-    permission_classes = [IsAuthenticated]
 
 
     def get_queryset(self):
